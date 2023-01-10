@@ -1,21 +1,31 @@
 // ==UserScript==
-// @name        Reddit fade seen links
-// @namespace   https://github.com/tuantadev/captcha
-// @description Fades links that you have already seen
-// @include     /https?:\/\/[a-z]+\.reddit\.com\//
-// @include     https://news.ycombinator.com/*
-// @include     https://lobste.rs/*
-// @include     https://openuserjs.org/*
-// @include     http*://www.producthunt.com/*
-// @include     https://www.qudos.io/*
-// @include     https://news.layervault.com/
-// @version     1.1.4
-// @grant       GM_getValue
-// @grant       GM_setValue
-// @grant       GM_deleteValue
-// @grant       GM_listValues
-// @grant       GM_addStyle
-// @grant       GM_registerMenuCommand
+// @name         hCaptcha Captcha Solver by noCaptchaAi
+// @name:ar      noCaptchaAI hCaptcha Solver حلال
+// @name:ru      noCaptchaAI Решатель капчи hCaptcha
+// @name:sh-CN   noCaptchaAI 验证码求解器
+// @namespace    https://nocaptchaai.com
+// @version      3.6.0
+// @description  hCaptcha Solver automated Captcha Solver bypass Ai service. Free 6000 🔥solves/month! 50x⚡ faster than 2Captcha & others
+// @description:ar تجاوز برنامج Captcha Solver الآلي لخدمة hCaptcha Solver خدمة Ai. 6000 🔥 حل / شهر مجاني! 50x⚡ أسرع من 2Captcha وغيرها
+// @description:ru hCaptcha Solver автоматизирует решение Captcha Solver в обход сервиса Ai. Бесплатно 6000 🔥решений/месяц! В 50 раз⚡ быстрее, чем 2Captcha и другие
+// @description:zh-CN hCaptcha Solver 自动绕过 Ai 服务的 Captcha Solver。 免费 6000 🔥解决/月！ 比 2Captcha 和其他人快 50x⚡
+// @author       noCaptcha AI and Diego
+// @match        *://*/*
+// @match        https://config.nocaptchaai.com/?apikey=*
+// @icon         https://docs.nocaptchaai.com/img/nocaptchaai.com.png
+// @require      https://greasyfork.org/scripts/395037-monkeyconfig-modern/code/MonkeyConfig%20Modern.js
+// @require      https://cdn.jsdelivr.net/npm/sweetalert2@11
+// @updateURL    https://github.com/noCaptchaAi/hCaptchaSolver.user.js/raw/main/hCaptchaSolver.user.js
+// @downloadURL  https://github.com/noCaptchaAi/hCaptchaSolver.user.js/raw/main/hCaptchaSolver.user.js
+// @grant        GM_info
+// @grant        GM_setValue
+// @grant        GM_getValue
+// @grant        GM_registerMenuCommand
+// @grant        GM_addStyle
+// @grant        GM_xmlhttpRequest
+// @grant        GM_openInTab
+// @grant        GM_addElement
+// @license      MIT
 // ==/UserScript==
 (async () => {
   "use strict";
